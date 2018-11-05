@@ -1,6 +1,7 @@
 # OS_Project
 
-##Producer–Consumer Problem using Pthreads (also known as POSIX threads)
+### Producer–Consumer Problem using Pthreads (also known as POSIX 
+threads)
 
 Section 5.7.1 presented a semaphore-based solution to the 
 producer–consumer
