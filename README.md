@@ -1,7 +1,7 @@
 # OS_Project
 
-###Producer–Consumer Problem using Pthreads (also known as POSIX 
-threads)
+##Producer–Consumer Problem using Pthreads (also known as POSIX threads)
+
 Section 5.7.1 presented a semaphore-based solution to the 
 producer–consumer
 problem using a bounded buffer. In this project, you will design a 
@@ -26,7 +26,7 @@ full, and mutex structures. Solve this problem using Pthreads, using
 unnamed
 semaphores.
 
-Unnamed vs. Named Semaphores
+##Unnamed vs. Named Semaphores
 POSIX semaphores can be unnamed or named. Unnamed semaphores are 
 allocated in
 process memory and initialized. Unnamed semaphores might be usable by 
@@ -50,7 +50,7 @@ you can create a named semaphore that has a name defined in the file
 system name
 space.
 
-The Buffer
+##The Buffer
 Internally, the buffer will consist of a fixed-size array of type 
 buffer_item (which will
 be defined using a typedef). The array of buffer_item objects will be 
@@ -120,7 +120,7 @@ argv[1],argv[2],argv[3] */
 }
 ```
 
-The Producer and Consumer Threads
+##The Producer and Consumer Threads
 The producer thread will alternate between sleeping for a random period 
 of time and
 inserting a random integer into the buffer. Random numbers will be 
@@ -163,7 +163,7 @@ printf("consumer consumed %d\n",item);
 }
 ```
 
-Pthreads Thread Creation and Synchronization
+##Pthreads Thread Creation and Synchronization
 Creating threads using the Pthreads API is discussed in Section 4.4.1. 
 Coverage of
 mutex locks and semaphores using Pthreads is provided in Section 5.9.4. 
