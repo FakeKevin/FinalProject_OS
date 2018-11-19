@@ -51,7 +51,7 @@ https://www.geeksforgeeks.org/use-posix-semaphores-c/
 /* Variables */
 sem_t full, empty; 	  	 //Semaphores
 pthread_mutex_t mutex;    	 //Mutex Lock
-buffer_item buffer[BUFFER_SIZE]; //Buffer
+buffer_item buffer[BUFFER_SIZE];//Buffer
 int counter;		  	 //Buffer Counter
 pthread_t tid;		  	 //Thread ID
 pthread_attr_t attr;	  	 //Set of thread attributes
