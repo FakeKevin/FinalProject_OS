@@ -48,9 +48,8 @@ https://www.geeksforgeeks.org/use-posix-semaphores-c/
 
 #define TRUE 1
 
-/* Variables */
-sem_t full, empty; 	  	 //Semaphores
-pthread_mutex_t mutex;    	 //Mutex Lock
+sem_t full, empty; 	  	 //Semaphore type
+pthread_mutex_t mutex;    	 //Mutex Lock type
 buffer_item buffer[BUFFER_SIZE];//Buffer
 int counter;		  	 //Buffer Counter
 pthread_t tid;		  	 //Thread ID
@@ -60,7 +59,7 @@ void *producer(void *param); //Producer thread
 void *consumer(void *param); //Consumer thread
 
 void run(){
-  /* Initialize the mutex lock, full and empty semaphores, attributes and buffer */
+  /* Initialize the mutex lock, semaphore, attributes and buffer */
   pthread_mutex_init(&mutex, NULL);
   sem_init(&full, 0, 0);
   sem_init(&empty, 0, BUFFER_SIZE);
